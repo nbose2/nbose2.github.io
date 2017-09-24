@@ -44,10 +44,10 @@
             <li class="nav-item px-lg-4">
               <a class="nav-link text-uppercase text-expanded" href="about.html">About</a>
             </li>
-            <li class="nav-item px-lg-4">
+            <li class="nav-item active px-lg-4">
               <a class="nav-link text-uppercase text-expanded" href="blog.html">Blog</a>
             </li>
-            <li class="nav-item active px-lg-4">
+            <li class="nav-item px-lg-4">
               <a class="nav-link text-uppercase text-expanded" href="contact.html">Contact</a>
             </li>
           </ul>
@@ -58,64 +58,51 @@
     <div class="container">
 
       <div class="bg-faded p-4 my-4">
-        <hr class="divider">
-        <h2 class="text-center text-lg text-uppercase my-0">Contact
-          <strong>Business Casual</strong>
-        </h2>
-        <hr class="divider">
-        <div class="row">
-          <div class="col-lg-8">
-            <div class="embed-responsive embed-responsive-16by9 map-container mb-4 mb-lg-0">
-              <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <h5 class="mb-0">Phone:</h5>
-            <div class="mb-4">123.456.7890</div>
-            <h5 class="mb-0">Email:</h5>
-            <div class="mb-4">
-              <a href="mailto:name@example.com">name@example.com</a>
-            </div>
-            <h5 class="mb-0">Address:</h5>
-            <div class="mb-4">
-              3481 Melrose Place
-              <br>
-              Beverly Hills, CA 90210
-            </div>
+        <div class="card card-inverse">
+          <img class="card-img img-fluid w-100" src="img/slide-1.jpg" alt="">
+          <div class="card-img-overlay bg-overlay">
+            <h2 class="card-title text-shadow text-white text-uppercase mb-0">Post Title</h2>
+            <h4 class="text-shadow text-white">March 1, 2017</h4>
+            <p class="lead card-text text-shadow text-white w-50 d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit repellat provident quo aliquam eius ea, animi porro magnam totam dolor nam error quas labore eveniet dicta nostrum inventore veniam. Ipsam?</p>
+            <a href="#" class="btn btn-secondary">Read More</a>
           </div>
         </div>
       </div>
 
       <div class="bg-faded p-4 my-4">
-        <hr class="divider">
-        <h2 class="text-center text-lg text-uppercase my-0">Contact
-          <strong>Form</strong>
-        </h2>
-        <hr class="divider">
-        <form>
-          <div class="row">
-            <div class="form-group col-lg-4">
-              <label class="text-heading">Name</label>
-              <input type="text" class="form-control">
-            </div>
-            <div class="form-group col-lg-4">
-              <label class="text-heading">Email Address</label>
-              <input type="email" class="form-control">
-            </div>
-            <div class="form-group col-lg-4">
-              <label class="text-heading">Phone Number</label>
-              <input type="tel" class="form-control">
-            </div>
-            <div class="clearfix"></div>
-            <div class="form-group col-lg-12">
-              <label class="text-heading">Message</label>
-              <textarea class="form-control" rows="6"></textarea>
-            </div>
-            <div class="form-group col-lg-12">
-              <button type="submit" class="btn btn-secondary">Submit</button>
-            </div>
+        <div class="card card-inverse">
+          <img class="card-img img-fluid w-100" src="img/slide-2.jpg" alt="">
+          <div class="card-img-overlay bg-overlay">
+            <h2 class="card-title text-shadow text-white text-uppercase mb-0">Post Title</h2>
+            <h4 class="text-shadow text-white">March 1, 2017</h4>
+            <p class="lead card-text text-shadow text-white w-50 d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit repellat provident quo aliquam eius ea, animi porro magnam totam dolor nam error quas labore eveniet dicta nostrum inventore veniam. Ipsam?</p>
+            <a href="#" class="btn btn-secondary">Read More</a>
           </div>
-        </form>
+        </div>
+      </div>
+
+      <div class="bg-faded p-4 my-4">
+        <div class="card card-inverse">
+          <img class="card-img img-fluid w-100" src="img/slide-3.jpg" alt="">
+          <div class="card-img-overlay bg-overlay">
+            <h2 class="card-title text-shadow text-white text-uppercase mb-0">Post Title</h2>
+            <h4 class="text-shadow text-white">March 1, 2017</h4>
+            <p class="lead card-text text-shadow text-white w-50 d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit repellat provident quo aliquam eius ea, animi porro magnam totam dolor nam error quas labore eveniet dicta nostrum inventore veniam. Ipsam?</p>
+            <a href="#" class="btn btn-secondary">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pagination -->
+      <div class="bg-faded p-4 my-4">
+        <ul class="pagination justify-content-center mb-0">
+          <li class="page-item">
+            <a class="page-link" href="#">&larr; Older</a>
+          </li>
+          <li class="page-item disabled">
+            <a class="page-link" href="#">Newer &rarr;</a>
+          </li>
+        </ul>
       </div>
 
     </div>
@@ -131,15 +118,6 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Zoom when clicked function for Google Map -->
-    <script>
-      $('.map-container').click(function () {
-        $(this).find('iframe').addClass('clicked')
-      }).mouseleave(function () {
-        $(this).find('iframe').removeClass('clicked')
-      });
-    </script>
 
   </body>
 
